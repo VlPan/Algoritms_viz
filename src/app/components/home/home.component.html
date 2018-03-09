@@ -1,0 +1,13 @@
+
+<div class="bw-home">
+<input type="text"
+       ng-model="whatToSearch"
+       class="bw-home__search"
+       id="elementID"
+>
+
+   <div ng-repeat="alg in $ctrl.algoritmsList | filter:whatToSearch track by $index ">
+      <alg-card algorithm="alg"></alg-card>
+   </div>
+
+</div>
